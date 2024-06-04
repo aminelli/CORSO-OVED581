@@ -48,4 +48,21 @@ cat /etc/login.defs | grep PASS
 # cambio le rule della password per l'utente pippo
  sudo chage --mindays 7 --maxdays 90 --warndays 5 pippo
 
- 
+# creazione di un gruppo
+sudo groupadd gr-test-01
+
+# modifica di un gruppo
+sudo groupmod
+
+# modifica di un utente
+sudo usermod
+
+# eliminazione di un gruppo
+sudo groupdel
+
+# eliminazione di un utente
+sudo userdel
+
+
+
+
