@@ -39,3 +39,11 @@ cat /usr/share/doc/setup*/uidgid
 # file per modificare i valori minimi per uid e gid
 sudo nano /etc/login.defs
 
+# Vedere i metadati della password i un utente
+sudo chage --list pippo
+
+# lista parametri modificabili per rules sulle password
+cat /etc/login.defs | grep PASS
+
+# cambio le rule della password per l'utente pippo
+ sudo chage --mindays 7 --maxdays 90 --warndays 5 pippo
