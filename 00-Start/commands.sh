@@ -47,3 +47,5 @@ cat /etc/login.defs | grep PASS
 
 # cambio le rule della password per l'utente pippo
  sudo chage --mindays 7 --maxdays 90 --warndays 5 pippo
+
+ 
