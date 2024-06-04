@@ -10,3 +10,32 @@ sudo systemctl status
 
 # Lista di tutti i servizi attivi
 sudo systemctl list-units --type=service --state=active
+
+
+# Verifica del target corrente (runlevel)
+systemctl get-default
+
+# Cisualizzare lo stato dei servizi
+systemctl list-unit-files --type=service
+
+# lista utenti
+cat /etc/passwd
+
+# lista pwd crittografate x utente
+sudo cat /etc/shadow
+
+# lista gruppi
+cat /etc/group
+
+# add user + grouppo con lo stesso nome utente
+sudo useradd pippo -U
+
+# set user pwd
+sudo passwd pippo
+
+# lissta degli uid e gid riservati
+cat /usr/share/doc/setup*/uidgid
+
+# file per modificare i valori minimi per uid e gid
+sudo nano /etc/login.defs
+
